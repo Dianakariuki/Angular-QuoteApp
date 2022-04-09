@@ -9,9 +9,19 @@ export class QuoteBoxComponent {
   @Input() author!: string;
   @Input() quote!: string;
   @Input() upvote!: string;
+  @Input()
+  numberofupvotes!: number;
   @Input() downvote!: string;
-
+  @Input()
+  numberofdownvotes: number=0;
   @Input() getNewQuote!: () => void;
 
+  upvotes(){
+   this.numberofupvotes++;
+  }
+  downvotes(){
+    this.numberofdownvotes--;
+   }
+ 
   constructor() {}
 }
