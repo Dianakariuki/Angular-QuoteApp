@@ -26,6 +26,16 @@
       margin: 0;
       overflow-y: auto;
     }
+    #delete,#upvote{
+        padding-right: 2%;
+        margin-left: 1%;
+      }
+      #no{
+        padding-right: 2%;
+        margin-left: 1%;
+        font-weight: 900; 
+      }
+
   }
   #delete,#upvote{
     padding-right: 12%;
