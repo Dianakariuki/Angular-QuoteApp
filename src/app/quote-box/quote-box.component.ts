@@ -20,7 +20,7 @@ export class QuoteBoxComponent {
    this.numberofupvotes++;
   }
   downvotes(){
-    this.numberofdownvotes--;
+    this.numberofdownvotes++;
    }
  
   constructor() {}
