@@ -8,7 +8,9 @@ import { Component, Input } from "@angular/core";
 export class QuoteBoxComponent {
   @Input() author!: string;
   @Input() quote!: string;
-  
+  @Input() upvote!: string;
+  @Input() downvote!: string;
+
   @Input() getNewQuote!: () => void;
 
   constructor() {}
