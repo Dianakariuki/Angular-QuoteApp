@@ -9,12 +9,12 @@
         <button class="btn btn-warning" id=" upvote" (click)="upvotes()">
           upvote
         </button>
-        <p>{{numberofupvotes}}</p>
+        <p id="no">{{numberofupvotes}}</p>
         <div class="btn-row">
             <button class="btn btn-danger" id="downvote" (click)="downvotes()">
               downvote
             </button>
-            <p>{{numberofdownvotes}}</p>
+            <p id="no">{{numberofdownvotes}}</p>
            
             <button class="btn btn-secondary" id="delete" (click)= 'goalDelete(true)' >
                 Delete

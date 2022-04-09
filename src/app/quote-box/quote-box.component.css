@@ -16,10 +16,9 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      padding-left: 12%;
+      margin-left: 5%;
     }
-      #tweet-quote {
-        margin-left: 1em;
-      }
     
   
   @media only screen and (max-width: 480px) {
@@ -27,4 +26,13 @@
       margin: 0;
       overflow-y: auto;
     }
+  }
+  #delete,#upvote{
+    padding-right: 12%;
+    margin-left: 5%;
+  }
+  #no{
+    padding-right: 12%;
+    margin-left: 5%;
+    font-weight: 900; 
   }
