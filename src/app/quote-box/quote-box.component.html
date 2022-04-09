@@ -2,17 +2,19 @@
     <h1 id="text"><i class="fa fa-quote-left"></i> {{ quote }}</h1>
     <p id="author">- {{ author }}</p>
     <div class="btn-row">
-        <button class="btn btn-primary" id="new-quote" (click)="getNewQuote()">
-          New quote
+      <button class="btn btn-primary" id="new-quote" (click)="getNewQuote()">
+        New quote
+      </button>
+      <div class="btn-row">
+        <button class="btn btn-primary" id=" upvote" (click)="upvotes()">
+          upvote
         </button>
+        <p>{{numberofupvotes}}</p>
         <div class="btn-row">
-          <button class="btn btn-primary" id="new-quote" (click)="getNewQuote()">
-            upvote
-          </button>
-          <div class="btn-row">
-              <button class="btn btn-primary" id="new-quote" (click)="getNewQuote()">
-                downvote
-              </button>
-             
-      </div>
+            <button class="btn btn-primary" id="downvote" (click)="downvotes()">
+              downvote
+            </button>
+            <p>{{numberofdownvotes}}</p>
+           
     </div>
+  </div>
