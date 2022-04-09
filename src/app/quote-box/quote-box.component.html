@@ -6,17 +6,17 @@
         New quote
       </button>
       <div class="btn-row">
-        <button class="btn btn-primary" id=" upvote" (click)="upvotes()">
+        <button class="btn btn-warning" id=" upvote" (click)="upvotes()">
           upvote
         </button>
         <p>{{numberofupvotes}}</p>
         <div class="btn-row">
-            <button class="btn btn-primary" id="downvote" (click)="downvotes()">
+            <button class="btn btn-danger" id="downvote" (click)="downvotes()">
               downvote
             </button>
             <p>{{numberofdownvotes}}</p>
            
-            <button class="btn btn-primary" id="delete" (click)= 'goalDelete(true)' >
+            <button class="btn btn-secondary" id="delete" (click)= 'goalDelete(true)' >
                 Delete
               </button>
     </div>
