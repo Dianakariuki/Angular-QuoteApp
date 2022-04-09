@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   numberofupvotes!: number;
   downvote!:string;
   numberofdownvotes!: number;
-  
+  delete!:string;
   getNewQuote: () => void = (): void => {
     const idx = Math.floor(Math.random() * this.quoteList.length);
     const newQuote = this.quoteList[idx];

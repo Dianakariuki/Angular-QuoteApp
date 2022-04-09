@@ -14,7 +14,9 @@ export class QuoteBoxComponent {
   @Input() downvote!: string;
   @Input()
   numberofdownvotes: number=0;
+  @Input() Delete!: string;
   @Input() getNewQuote!: () => void;
+  isComplete: any;
 
   upvotes(){
    this.numberofupvotes++;
@@ -22,6 +24,8 @@ export class QuoteBoxComponent {
   downvotes(){
     this.numberofdownvotes++;
    }
- 
+   goalDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
   constructor() {}
 }
