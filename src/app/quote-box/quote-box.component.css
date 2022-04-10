@@ -4,6 +4,7 @@
     margin: 20%;
     border-radius: 10px;
     color: black;
+     box-shadow: 10px 10px 50px #ccc;
 }
     #text {
       font-family: "Amiri", serif;
@@ -35,7 +36,12 @@
         margin-left: 1%;
         font-weight: 900; 
       }
-
+      #first{
+        font-weight: bolder; 
+        font-family: "Amiri", serif;
+        font-size: 75px;
+        margin-top: 100px;
+     }
   }
   #delete,#upvote{
     padding-right: 12%;
@@ -46,3 +52,9 @@
     margin-left: 5%;
     font-weight: 900; 
   }
+  #first{
+    font-weight: bolder; 
+    font-family: "Amiri", serif;
+    font-size: 75px;
+    margin: 200px;
+ }
