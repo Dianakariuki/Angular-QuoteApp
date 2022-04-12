@@ -1,31 +1,45 @@
-<h2 class="text-center">Add a Quote</h2>
-<hr>
-<div class="container-fluid">
-    <form #quoteForm= "ngForm" (ngSubmit)="submitQuote()">
+<div class="container">
+
+    <h1>Create Quote </h1>
+
+    <form>
+
         <div class="form-group">
-            <label for="author-name">Author Name:</label>
-            <input type="text" required class="form-control" id="author-name" [(ngModel)]="newQuote.author" name="author-name" #name="ngModel">
-            <div [hidden]= "name.valid || name.pristine" class="alert alert-danger">
-                <p>Please input author name !</p>
-            </div>
-            <p class="mt-2">&nbsp;{{newQuote.author}}</p>
+
+            <label for="firstname">Name</label><br>
+
+            <input type="text" name="firstname" class = "form-control" ngModel>
+
         </div>
-        <div class="form-group mt-3">
-            <label for="quote">Enter quote here:</label>
-            <textarea id="description" rows="4" class="form-control" required [(ngModel)]="newQuote.quote" #quote="ngModel" name="quote"></textarea>
-            <div [hidden]= "quote.valid || quote.pristine" class="alert alert-danger">
-                <p>Please input a quote !</p>
-            </div>
+
+        <pre></pre>
+
+        <div class="form-group">
+
+            <label for="lastname">Quote</label><br>
+
+            <input type="text" name="lastname" class = "form-control"    ngModel>
+
         </div>
-        <div class="form-group mt-3">
-            <label for="date">Date Created: &nbsp; </label>
-            <input type="date" id="complete" required [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" name="completeDate">
-            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                <p>Please fill in a date !</p>
-            </div>
+
+        <pre></pre>
+
+       
+
+        <pre></pre>
+
+        <div class="form-group">
+
+            <label for="number">Date</label><br>
+
+            <input type="text" name="password" class = "form-control" ngModel>
+
         </div>
-        <button type="submit" class="btn btn-warning mt-4 float-end"><strong>Add Quote</strong>&nbsp;
-            <span class="spinner-grow spinner-grow-sm spinner-grow-success"></span>
-        </button>
+
+        <pre></pre>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+
     </form>
+
 </div>
